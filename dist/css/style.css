@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: slategrey;
+  color: aliceblue;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  border: 3px solid white;
+}
+.scoreboard .scoreboard__score {
+  display: flex;
+  flex-direction: row;
+  gap: 10em;
+}
+.scoreboard .scoreboard__score .scoreboard__player,
+.scoreboard .scoreboard__score .scoreboard__bot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.1em;
+}
+.scoreboard__name_you {
+  font-size: 2em;
+}
+.scoreboard__name_bot {
+  font-size: 2em;
+}
+
+.interface {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em;
+  font-weight: lighter;
+}
+.interface .interface__game-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+.interface .interface__game-buttons .interface__btn {
+  color: slategray;
+  padding: 1em 2em;
+  border-radius: 5%;
+  border-color: slategray;
+}
+.interface .interface__game-buttons .interface__btn:hover {
+  background-color: rgb(185, 208, 231);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+}
+.footer .footer__results {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.footer img {
+  width: 3em;
+}
+/*# sourceMappingURL=style.css.map */
